@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Deo Bus Passenger Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('city-3263352.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        div {
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 0%;
+            padding: 3%;
+        }
+        h2, h4 {
+            text-align: center;
+        }
+        .bg {
+            font-size: xx-large;
+            background-color: aliceblue;
+            color: red;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+        .br {
+            font-size: x-large;
+            background-color: beige;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        .form-label {
+            color: white;
+            font-style: italic;
+            font-size: larger;
+            font-weight: bolder;
+            background-color: blue;
+        }
+        .hel{
+			font-style:oblique;
+			color: black;
+			font-size: large;
+			font-weight: bolder;
+			background-color: white;
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="controlerproj" method="post">
+            <h4 class="bg">Welcome to Deo Bus</h4>
+            <h2 class="br">Passenger Details For Ticket</h2>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name Here"><br>
+                <label for="start" class="form-label">From:</label><br>
+                <select class="form-select" id="start" name="start">
+                    <option value="sel">----Select----</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="thane">Thane</option>
+                    <option value="nagpur">Nagpur</option>
+                    <option value="nanded">Nanded</option>
+                    <option value="navi-mumbai">Navi Mumbai</option>
+                </select><br>
+                <label for="end" class="form-label">To:</label><br>
+                <select class="form-select" id="end" name="end">
+                    <option value="sel">----Select----</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="thane">Thane</option>
+                    <option value="nagpur">Nagpur</option>
+                    <option value="nanded">Nanded</option>
+                    <option value="navi-mumbai">Navi Mumbai</option>
+                </select><br>
+                <label for="pref" class="form-label">Choose Berth Preference:</label><br>
+                <select class="form-select" id="pref" name="pref">
+                    <option value="sel">----Select----</option>
+                    <option value="upper">Upper</option>
+                    <option value="lower">Lower</option>
+                    <option value="middle">Middle</option>
+                    <option value="window">Window</option>
+                </select><br>
+                <label for="pgen" class="form-label">Gender:</label>
+                <select class="form-select" id="pgen" name="pgen">
+                    <option value="sel">----Select----</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <label for="num" class="form-label">Mobile No:</label>
+                <input type="text" class="form-control" id="num" name="num" placeholder="Enter Number Here"><br>
+                <input type="submit" value="Submit"/>
+                <a  class="hel" href="home.html">Home Page</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
